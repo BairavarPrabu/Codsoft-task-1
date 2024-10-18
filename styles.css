@@ -1,0 +1,124 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.landing-page {
+    background-image: url('https://wallpapers.com/images/hd/movie-poster-background-q1zm830g0hfww2lk.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Top Navigation */
+.top-nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.left-icons i {
+    color: white;
+    margin-right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.left-icons img.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right-buttons {
+    display: flex;
+}
+
+.right-buttons button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1em;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.right-buttons button:hover {
+    color: #e50914;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Email Input and Button */
+.email-box {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="email"] {
+    padding: 15px;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    width: 300px;
+    border-radius: 5px 0 0 5px;
+}
+
+.get-started-btn {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #f40612;
+}
